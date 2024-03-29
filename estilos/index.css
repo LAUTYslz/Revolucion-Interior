@@ -19,12 +19,35 @@ font-style: normal;
 
 }
 
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 10vh;
+    line-height: 25vh;
+    font-weight:700;
+    text-shadow: #000000a3 0px 5px 5px;
+}
+
+h2{
+    font-size: 7vh;
+    font-weight: 600;
+    color: #A65891;
+}
+p{
+    font-size: 2.7vh;
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: justify;
+}
+
 /* ---------------HEADER------------------- */
 header{
     width: 80%;
     margin: auto;
+    height: 10vh;
 }
 nav{
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,16 +56,132 @@ nav{
 }
 #logo{
     scale: 1;
-    width: 20%;
+    width: 15%;
 }
 #nav-menu{
     display: flex;
     justify-content: space-between;
     width: 30%;
 }
+#nav-menu h3{
+    font-weight: normal;
+    font-size: 3vh;
+}
 
 
 /* ----------------MAIN------------------------- */
+/* TITULO */
 #hero{
-    background-image: url(/imagenes\ titulo/);
+    background-image: url(/imagenes-titulo/pc/hero\ 3.png);
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 43vh;
+    margin-bottom: 7vh;
 }
+
+/* NOSOTROS */
+#nosotros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#nosotros h2{
+    width: 50%;
+}
+#nosotros p{
+    width: 75vh;
+}
+
+/* COACHING */
+#coaching{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#coaching h2{
+    width: 75vh;
+    text-align: end;
+}
+#coaching p{
+    width: 50%;
+}
+
+/* IMAGEN TRAZADO */
+.trazados{
+    width: 100%;
+    margin: 4vh 0;
+}
+
+/* BENEFICIOS */
+#beneficios{
+    background-image: url(/imagenes-titulo/pc/Fondo-beneficio.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 5vh 0;
+    margin: 10vh 0;
+    align-items: center;
+    flex-direction: column;
+}
+#beneficios h2{
+    color: white;
+    text-align: center;
+}
+.beneficios-texto{
+    background-image: url(/imagenes-titulo/pc/poligono-beneficio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:25vh;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3vh;
+    color: #BF5B04;
+    font-weight: 600;
+}
+
+#contenedor-beneficios {
+    display: grid;
+    grid-template-areas: "ben1 ben1 ben2 ben2" "ben3 ben4 ben5 ben6";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+  .ben-1 {
+    grid-area: ben1;
+  }
+  .ben-2 {
+    grid-area: ben2;
+  }
+  .ben-3 {
+    grid-area: ben3;
+  }
+  .ben-4 {
+    grid-area: ben4;
+  }
+  .ben-5 {
+    grid-area: ben5;
+  }
+  .ben-6 {
+    grid-area: ben6;
+  }
+
+  /* Algunos servicios */
+  #algunos-servicios{
+    width: 80%;
+    margin: auto;
+  }
