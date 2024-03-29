@@ -9,6 +9,12 @@
     margin-bottom: 7vh;
 }
 
+#hero h1{
+    text-align: center;
+    line-height: 25vh;
+    text-shadow: #000000a3 0px 5px 5px;
+}
+
 /* NOSOTROS */
 #nosotros{
     display: flex;

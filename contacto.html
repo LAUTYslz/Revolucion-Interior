@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolución Interna - Contacto</title>
+    <link rel="icon" href="Logo/logo sin texto ni circulo.png" type="image/png">
     <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/contacto.css">
 </head>
 <body>
     <header>
-        <nav id="nav">
-          <div class="redes">
-            <a href=""><img src="img/instagram.svg" alt="redes- instagram" /></a>
-            <a href=""><img src="img/youtube.svg" alt="" /></a>
-            <a href=""><img src="img/tiktok.svg" alt="" /></a>
-            <a href=""><img src="img/spotifly.svg" alt="" /></a>
-          </div>
-  
-          <div class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="index.html#musica">Musica</a>
-            <a href="index.html#equipo">Equipo</a>
-            <a href="index.html#merch">Merch</a>
-          </div>
+        <nav>
+            <img src="Logo/logo sin sub 2.png" id="logo" alt="">
+            <div id="nav-menu">
+                <h3 class="menu-categorias">NOSOTROS</h3>
+                <h3 class="menu-categorias">CONTACTO</h3>
+                <h3 class="menu-categorias">SERVICIOS</h3>
+            </div>
         </nav>
     </header>
 
@@ -32,7 +26,7 @@
             <div id="texto-contacto">
                 <p>Explora cómo construir una relación positiva y amorosa con tus pensamientos. Descubre el equilibrio y la serenidad interior a través de prácticas conscientes.</p>
                 <h2>PARA MÁS INFORMACIÓN</h2>
-                <hr>
+                <!-- <hr> -->
                 <p>+55 1126607492<br>
                 RevolucionInterna1032@gmail.com</p>
             </div>
@@ -42,22 +36,35 @@
                 action=""
                 method="POST">
 
-                <label for="nombre">Nombre y Apellido</label>
+                <div class="contenedor-inputs">
+                    <label for="nombre">Nombre y Apellido</label>
                 <input type="text" name="" class="contacto-inputs">
-
-                <label for="telefono">Número de Teléfono</label>
+                </div>
+                
+                <div class="contendor-inputs">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="text" name="" class="contacto-inputs">
+                </div>
+                
+                <div class="contendor-inputs">
+                    <label for="correo">Correo electrónico</label>
                 <input type="text" name="" class="contacto-inputs">
-
-                <label for="correo">Correo electrónico</label>
-                <input type="text" name="" class="contacto-inputs">
-
-                <label for="mensaje">Mensaje</label>
+                </div>
+                
+                <div class="contendor-inputs">
+                    <label for="mensaje">Mensaje</label>
                 <textarea name="" id="contacto-mensaje" cols="30" rows="10" class="contacto-inputs"></textarea>
+                </div>
+               
 
                 <input type="submit" value="Enviar" class="contacto-enviar">
                 </form>
             </div>
         </section>
     </main>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
