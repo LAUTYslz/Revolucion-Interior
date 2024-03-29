@@ -100,19 +100,20 @@ nav{
 /* COACHING */
 #coaching{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    height: 17vh;
 }
 
 #coaching h2{
-    width: 75vh;
-    text-align: end;
+    width: 50%;
+    text-align: center;
 }
 #coaching p{
-    width: 50%;
+    width: 70%;
 }
 
 /* IMAGEN TRAZADO */
@@ -160,28 +161,154 @@ nav{
     grid-row-gap: 1rem;
     width: 80%;
     margin: auto;
-  }
-  .ben-1 {
-    grid-area: ben1;
-  }
-  .ben-2 {
-    grid-area: ben2;
-  }
-  .ben-3 {
-    grid-area: ben3;
-  }
-  .ben-4 {
-    grid-area: ben4;
-  }
-  .ben-5 {
-    grid-area: ben5;
-  }
-  .ben-6 {
-    grid-area: ben6;
-  }
+}
 
-  /* Algunos servicios */
-  #algunos-servicios{
+.ben-1 {
+    grid-area: ben1;
+}
+.ben-2 {
+    grid-area: ben2;
+}
+.ben-3 {
+    grid-area: ben3;
+}
+.ben-4 {
+    grid-area: ben4;
+}
+.ben-5 {
+    grid-area: ben5;
+}
+.ben-6 {
+    grid-area: ben6;
+}
+
+/* Algunos servicios */
+#algunos-de-nuestros-servicios{
     width: 80%;
+    height: 60vh;
     margin: auto;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contenedor-algunos-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.algunos-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35vh;
+}
+
+.algunos-servicios button{
+    width: 50%;
+    height: 15%;
+    font-size: 2.2vh;
+    color: white;
+    font-weight: 300;
+    border: none;
+    border-radius: 20px;
+    transition: .3s all;
+
+}
+.algunos-servicios button h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.texto-alg-servicios h3{
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.texto-alg-servicios img{
+    width: 80%;
+}
+.texto-alg-servicios{
+    border-radius: 20px;
+    width: 45vh;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.par{
+    background-color: #BF5B04;
+
+}
+.impar{
+    background-color: #A65891;
+}
+.algunos-servicios button:hover{
+    cursor: pointer;
+    border:3px solid #F2960C;
+    color: #F2960C;
+    /* border: 3px solid black ; */
+}
+
+.ver-todo{
+    text-align: center;
+    width: 100%;
+}
+
+.ver-todo button{
+    display: inline-block;
+    height: 7vh;
+    width: 20%;
+    background: none;
+    border: #F2960C 4px solid;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.ver-todo button:hover{
+    background-color: #F2960C;
+    
+}
+
+.ver-todo button h3{
+    font-size: 3vh;
+    font-weight: 400;
+    text-align: center;
+    line-height: 3vh;
+}
+  
+/* ------------------FOOTER-------------------- */
+footer{
+    background-image: url(/imagenes-titulo/pc/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    padding-bottom: 2vh;
+    justify-content: end;
+    /* align-items: end; */
+    flex-direction: column;
+    margin: auto;
+    height: 20vh;
+    margin-top: 5vh;
+}
+.logo-footer{
+    width: 14%;
+    margin: 0 auto;
+    height: 40%;
+}
+.footer-redes{
+    width: 5%;
+    margin: 2vh auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-redes img{
+    width: 4vh;
+}
