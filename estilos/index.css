@@ -300,7 +300,7 @@ footer{
 .logo-footer{
     width: 14%;
     margin: 0 auto;
-    height: 40%;
+    height: auto;
 }
 .footer-redes{
     width: 5%;
