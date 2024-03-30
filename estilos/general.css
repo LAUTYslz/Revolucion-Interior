@@ -58,6 +58,11 @@ nav{
 #nav-menu a{
     text-decoration: none;
     color: black;
+    transition: .3s;
+}
+#nav-menu a:hover{
+    color: #A65891;
+    scale: 1.1;
 }
 #nav-menu h3{
     font-weight: normal;
