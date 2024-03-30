@@ -1,0 +1,77 @@
+main{
+    background-image: url(/imagenes-titulo/pc/trazado\ 2.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+#servicios-titulo{
+    color: #A65891;
+    width: 80%;
+    margin: 0vh auto 6vh;
+    padding-top: 3.3vh;
+}
+
+#contenedor-servicios{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); /* Cada columna tiene un ancho mínimo de 300px y se expandirá para ocupar el espacio disponible */
+    grid-gap: 6vh 5%; /* Espacio entre los elementos */
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 37vh;
+    width: 100%;
+}
+.servicios button{
+    width: 50%;
+    height: 15%;
+    font-size: 2.2vh;
+    color: white;
+    font-weight: 300;
+    border: none;
+    border-radius: 20px;
+    transition: .3s all;
+}
+.servicios button:hover{
+    cursor: pointer;
+    border:.5vh solid black;
+    color: black;
+    scale: 1.1;
+    /* border: 3px solid black ; */
+}
+.servicios button h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.texto-servicios h3{
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.texto-servicios img{
+    width: 80%;
+}
+.texto-servicios{
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.par{
+    background-color: #BF5B04;
+
+}
+.impar{
+    background-color: #A65891;
+}

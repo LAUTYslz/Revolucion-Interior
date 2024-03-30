@@ -185,8 +185,9 @@
 }
 .algunos-servicios button:hover{
     cursor: pointer;
-    border:3px solid #F2960C;
-    color: #F2960C;
+    border:.5vh solid black;
+    scale: 1.1;
+    color: black;
     /* border: 3px solid black ; */
 }
 
@@ -207,7 +208,7 @@
 
 .ver-todo button:hover{
     background-color: #F2960C;
-    
+    scale: 1.1;
 }
 
 .ver-todo button h3{
