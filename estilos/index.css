@@ -128,9 +128,14 @@
 }
 
 #contenedor-algunos-servicios{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); /* Cada columna tiene un ancho mínimo de 300px y se expandirá para ocupar el espacio disponible */
+    grid-gap: 6vh 5%;
 }
 
 .algunos-servicios{
@@ -138,7 +143,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 35vh;
+    height: 37vh;
+    width: 100%;
 }
 
 .algunos-servicios button{
@@ -169,7 +175,7 @@
 }
 .texto-alg-servicios{
     border-radius: 20px;
-    width: 45vh;
+    width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -218,3 +224,129 @@
     line-height: 3vh;
 }
   
+
+/* !--------------- RESPONSIVE: TABLET ------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* HERO */
+#hero{
+    height: 30vh;
+}
+#hero h1{
+    line-height: 20vh;
+}
+
+/* NOSOTROS */
+#nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#nosotros h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+#nosotros p{
+    width: 100%;
+}
+
+/* COACHING */
+#coaching{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+}
+#coaching h2{
+    width: 40%;
+    text-align: start;
+}
+#coaching p{
+    width: 50%;
+}
+
+/* BENEFICIOS */
+#beneficios{
+    background-image: url(/imagenes-titulo/tablet/beneficios.png);
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    padding: 6vh 0 3ch;
+    margin: 6vh 0;
+    justify-content: space-between;
+}
+.beneficios-texto{
+    background-image: url(/imagenes-titulo/pc/poligono-beneficio.png);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size:23vh;
+    height: 12vh;
+    font-size: 2.2vh;
+}
+#contenedor-beneficios {
+    display: grid;
+    grid-template-areas: "ben1 ben2" "ben3 ben4" "ben5 ben6";
+    grid-template-columns: 1fr 1fr ;
+    grid-row-gap: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+/* ALGUNOS SERVICIOS */
+#algunos-de-nuestros-servicios{
+    height: 70vh;
+}
+#contenedor-algunos-servicios{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); /* Cada columna tiene un ancho mínimo de 300px y se expandirá para ocupar el espacio disponible */
+    grid-gap: 3vh 5%;
+}
+.algunos-servicios{
+    height: 23vh;
+}
+.algunos-servicios button{
+    width: 50%;
+    height: 18%;
+    font-size: 1.8vh;
+    transition: none;
+}
+.algunos-servicios button h3{
+    letter-spacing: 2px;
+}
+.texto-alg-servicios h3{
+    font-size: 2.5vh;
+}
+.texto-alg-servicios img{
+    width: 80%;
+}
+.texto-alg-servicios{
+    height: 78%;
+}
+.algunos-servicios button:hover{
+    cursor: pointer;
+    border:none;
+    scale: 1;
+    color: white;
+    /* border: 3px solid black ; */
+}
+.ver-todo button{
+    height: 5vh;
+    width: 40%;
+    transition: none;
+}
+.ver-todo button:hover{
+    background-color: white;
+    scale: 1;
+}
+.ver-todo button h3{
+    font-size: 2.5vh;
+}
+}

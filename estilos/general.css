@@ -83,6 +83,7 @@ footer{
     margin: auto;
     height: 20vh;
     margin-top: 5vh;
+    margin-bottom: 0;
 }
 .logo-footer{
     width: 14%;
@@ -98,4 +99,68 @@ footer{
 
 .footer-redes img{
     width: 4vh;
+}
+
+
+/* !--------------- RESPONSIVE: TABLET ------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    h1{
+        font-size: 6vh;
+    }
+    
+    h2{
+        font-size: 4vh;
+    }
+    p{
+        font-size: 2vh;
+        font-weight: 300;
+    }
+
+    /* HEADER */
+    header{
+        width: 90%;
+        height: 9vh;
+    }
+    #logo{
+        height: 80%;
+    }
+    #nav-menu{
+        /* Tiene flex */
+        width: 45%;
+    }
+    #nav-menu a{
+        transition: none;
+    }
+    #nav-menu a:hover{
+        /* Cambio todo */
+        color: black;
+        scale: 1;
+        cursor: auto;
+    }
+    #nav-menu h3{
+        font-size: 2vh;
+    }
+
+    /* ------------------FOOTER-------------------- */
+footer{
+    display: flex;
+    justify-content: end;
+    /* align-items: end; */
+    margin-top: 0vh;
+}
+.logo-footer{
+    width: 30%;
+}
+.footer-redes{
+    width: 13%;
+    margin: 1vh auto 0;
+    /* display: flex; */
+    justify-content: space-between;
+}
+.footer-redes img{
+    width: 3.5vh;
+}
+
 }

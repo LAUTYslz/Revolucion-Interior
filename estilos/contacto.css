@@ -1,3 +1,10 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+
 main{
     background-image: url(/imagenes-titulo/pc/contacto.png);
     background-size: cover;
@@ -12,16 +19,7 @@ main{
 p, label, h2{
     color: white;
 }
-h2{
-   font-size: 4vh; 
-   text-decoration: underline;
-   text-decoration-thickness: 2px;
-   text-underline-offset: 1.5vh;
-}
-label{
-    font-size: 3vh;
-    padding-left: 1vh;
-}
+
 
 #contacto-titulo{
     text-align: start;
@@ -30,6 +28,18 @@ label{
     margin: auto;
     /* height: 10%; */
     /* line-height: normal; */
+}
+
+h2{
+    font-size: 4vh; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1.5vh;
+ }
+
+label{
+    font-size: 3vh;
+    padding-left: 1vh;
 }
 
 #contenido-contacto{
@@ -103,4 +113,80 @@ label{
 }
 
 
+/* !--------------- RESPONSIVE: TABLET ------------*/
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    main{
+        background-size: cover;
+        height: 70vh;
+        justify-content: space-between;
+    }
+
+    #contacto-titulo{
+        width: 80%;
+        margin: auto;
+        text-align: start;
+    }
+    
+    h2{
+        font-size: 2vh; 
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 1.5vh;
+     }
+    
+    label{
+        font-size: 2vh;
+        color: rgb(255, 255, 255);
+    }
+    
+    #contenido-contacto{
+        height: 70%;
+    }
+    
+    #texto-contacto{
+        width: 50%;
+        height: 50%;
+    }
+
+    #contenedor-contacto-form{
+        width: 40%;
+    }
+    #contacto-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+    }
+    .contenedor-inputs{
+        width: 100%;
+    }
+    
+    .contacto-inputs{
+        width: 100%;
+        height: 3.5vh;
+        padding: 0 1vh;
+        font-size: 2vh;
+        transition: none;
+        margin-top: .5vh;
+    }
+    .contacto-inputs:focus{
+        outline: #BF5B04 4px solid;
+    }
+    
+    #contacto-mensaje{
+        height: 13vh;
+    }
+    
+    .contacto-enviar{
+        height: 5vh;
+        width: 60%;
+        font-size: 2vh;
+        transition: none;
+    }
+    .contacto-enviar:hover{
+        cursor: auto;
+    }
+    
+}
