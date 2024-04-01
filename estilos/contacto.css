@@ -1,8 +1,9 @@
+@media screen and (min-width: 768px) {
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-} 
+} }
 
 
 main{
@@ -189,4 +190,110 @@ label{
         cursor: auto;
     }
     
+}
+
+@media screen and (max-width: 767px) {
+
+    main{
+        background-image: url(/imagenes-titulo/celular/contacto.png);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2vh;
+    }
+    #contacto-titulo{
+        width: 90%;
+    }
+    
+    h2{
+        font-size: 3vh; 
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 1.5vh;
+        margin: 2vh 0;
+     }
+    
+    label{
+        font-size: 2.5vh;
+        padding-left: 1vh;
+    }
+    
+    #contenido-contacto{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        height: 70%;
+    }
+    
+    #texto-contacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        margin: 2vh 0;
+        /* background-image: url(/imagenes-titulo/pc/contacto-texto.png); */
+        /* background-size: cover; */
+
+    }
+    
+    #contenedor-contacto-form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #contacto-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    .cpntenedor-inputs{
+        width: 100%;
+    }
+    
+    .contacto-inputs{
+        border-radius: 20px;
+        width: 100%;
+        height: 4vh;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 0 2vh;
+        font-size: 2.7vh;
+        transition: .2s all;
+        outline: none;
+        margin-bottom: 1vh;
+    }
+    .contacto-inputs:focus{
+        outline: #BF5B04 4px solid;
+    }
+    
+    #contacto-mensaje{
+        height: 10vh;
+        scrollbar-width: thin;
+        resize: none;
+        overflow-y:auto;
+        padding-top: 1vh;
+    }
+    
+    .contacto-enviar{
+        height: 5vh;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: #BF5B04 4px solid;
+        border-radius: 20px;
+        font-size: 2.5vh;
+        transition: .3s;
+    }
+    .contacto-enviar:hover{
+        background-color: #BF5B04;
+        cursor: pointer;
+        /* border: #BF5B04; */
+    }
 }
