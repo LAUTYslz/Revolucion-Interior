@@ -131,3 +131,57 @@ main{
     }
 
 }
+
+@media screen and (max-width: 767px) {
+
+    main{
+        background-image: url(/imagenes-titulo/tablet/trazado\ 2.png);
+        background-size: contain;
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+
+    #servicios-titulo{
+        color: #A65891;
+        width: 90%;
+        margin: 0vh auto 3vh;
+        padding-top: 3.3vh;
+    }
+
+    #contenedor-servicios{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80%, 1fr)); /* Cada columna tiene un ancho mínimo de 300px y se expandirá para ocupar el espacio disponible */
+        grid-gap: 3vh 5%; /* Espacio entre los elementos */
+    }
+
+    .servicios{
+        height: 27vh;
+    }
+    .servicios button{
+        width: 50%;
+        height: 18%;
+        font-size: 1.8vh;
+        transition: none;
+    }
+    .servicios button h3{
+        letter-spacing: 2px;
+    }
+    .texto-servicios h3{
+        font-size: 2.5vh;
+    }
+    .texto-servicios img{
+        width: 70%;
+    }
+    .texto-servicios{
+        height: 78%;
+    }
+    .servicios button:hover{
+        cursor: pointer;
+        border:none;
+        scale: 1;
+        color: white;
+        /* border: 3px solid black ; */
+    }
+}

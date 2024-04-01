@@ -195,8 +195,10 @@ label{
 @media screen and (max-width: 767px) {
 
     main{
-        background-image: url(/imagenes-titulo/celular/contacto.png);
-        background-size: cover;
+        /* background-image: url(/imagenes-titulo/celular/contacto.png); */
+        background-image: url(/imagenes-titulo/pc/trazado\ 2.png);
+        /* background-color: black; */
+        /* background-size: co; */
         background-position: center;
         height: auto;
         display: flex;
@@ -207,6 +209,7 @@ label{
     }
     #contacto-titulo{
         width: 90%;
+        color: #A65891;
     }
     
     h2{
@@ -214,12 +217,15 @@ label{
         text-decoration: underline;
         text-decoration-thickness: 2px;
         text-underline-offset: 1.5vh;
+        text-decoration-color: #A65891;
         margin: 2vh 0;
+        color: black;
      }
     
     label{
         font-size: 2.5vh;
         padding-left: 1vh;
+        color: black;
     }
     
     #contenido-contacto{
@@ -240,7 +246,10 @@ label{
         margin: 2vh 0;
         /* background-image: url(/imagenes-titulo/pc/contacto-texto.png); */
         /* background-size: cover; */
-
+    }
+    #texto-contacto p{
+        color: black;
+        font-weight: 400;
     }
     
     #contenedor-contacto-form{
@@ -262,8 +271,8 @@ label{
         border-radius: 20px;
         width: 100%;
         height: 4vh;
-        border: none;
-        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        background-color: #8c350365;
         padding: 0 2vh;
         font-size: 2.7vh;
         transition: .2s all;
