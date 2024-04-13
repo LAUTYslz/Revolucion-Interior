@@ -75,27 +75,67 @@
                         <h3>Biodescodificación</h3>
                         <img src="imagenes-titulo/imagenes-servicios/memoria cognitiva 2 1.png" alt="">
                     </div>
-                    <button class="impar ver-mas"><h3>Ver Más</h3></button>
+                    <button class="impar ver-mas" data-target="biodescodificacion-popup" ><h3>Ver Más</h3></button>
                 </div>
                 <div class="algunos-servicios">
                     <div class="texto-alg-servicios par">
                         <h3>REIKI</h3>
                         <img src="imagenes-titulo/imagenes-servicios/reiki.png" alt="">
                     </div>
-                    <button class="par ver-mas"><h3>Ver Más</h3></button>
+                    <button class="par ver-mas" id="reiki-abrir-popup"><h3>Ver Más</h3></button>
                 </div>
                 <div class="algunos-servicios">
                     <div class="texto-alg-servicios impar">
                         <h3>Flores de Bach</h3>
                         <img src="imagenes-titulo/imagenes-servicios/flores de bach 2 1.png" alt="">
                     </div>
-                    <button class="impar ver-mas"><h3>Ver Más</h3></button>
+                    <button class="impar ver-mas" data-target="flores-de-bach-popup"><h3>Ver Más</h3></button>
                 </div>
             </div>
             <div class="ver-todo">
                 <button class><h3>Ver Todo</h3></button>
             </div>
         </section>
+
+            <div class="servicios-popups" id="biodescodificacion-popup">
+                <div class="contenido-popups">
+                    <div class="encabezado-popups">
+                        <h2 class="subtitulo-popups">Biodescodificación</h2>
+                        <img src="/imagenes-titulo/imagenes-servicios/cerrar.svg" alt="" class="cerrar-popups">
+                    </div>
+                    <div class="texto-popups">
+                        <p>
+                            La Biodescodificación es una perspectiva integral de la salud que va más allá de los síntomas físicos para explorar las raíces emocionales y mentales de los malestares y enfermedades. En lugar de simplemente tratar los síntomas superficiales, busca entender lo que el cuerpo está tratando de comunicar a través de sus manifestaciones.
+                        </p>
+                        <p>
+                            Este enfoque considera que los problemas de salud son el resultado de desequilibrios más profundos en nuestro ser, que pueden estar relacionados con conflictos emocionales, traumas no resueltos o patrones mentales limitantes. Por lo tanto, en lugar de suprimir los síntomas con medicamentos, la Biodescodificación busca abordar estos desequilibrios en su origen.
+                        </p>
+                        <p>
+                            Al explorar las causas subyacentes de los malestares, la Biodescodificación busca promover un sentido de armonía y bienestar integral. Esto implica trabajar en la resolución de conflictos emocionales, cambiar patrones de pensamiento negativos y adoptar prácticas que fomenten la salud física, emocional y espiritual.
+                        </p>
+                    </div>
+                </div>
+                <button class="button-popups impar"><a href="">Para mas información (whatsapp)</a></button>
+            </div>
+            <div class="servicios-popups" id="flores-de-bach-popup">
+                <div class="contenido-popups">
+                    <div class="encabezado-popups">
+                        <h2 class="subtitulo-popups">FLores de Bach</h2>
+                        <img src="/imagenes-titulo/imagenes-servicios/cerrar.svg" alt="" class="cerrar-popups">
+                    </div>
+                    <div class="texto-popups">
+                        <p>
+                            Las esencias florales de Bach son una herramienta valiosa en el ámbito del coaching y el bienestar emocional. Al trabajar desde el interior, estas esencias naturales abordan las raíces emocionales de nuestros desequilibrios, promoviendo una transformación profunda y duradera. Cada flor tiene una vibración única que se alinea con estados emocionales específicos, como la falta de confianza, la tristeza, la indecisión o la preocupación excesiva.
+                        </p>
+                        <p>
+                            El proceso de tomar las esencias de Bach es simple y seguro, y puede integrarse fácilmente en la rutina diaria. Al tomar conscientemente estas esencias, uno puede experimentar una mayor claridad mental, una sensación de paz interior y una mayor capacidad para enfrentar los desafíos emocionales con serenidad y confianza. Ya sea que estés buscando reducir el estrés, superar el miedo o encontrar equilibrio emocional en tu vida, las flores de Bach ofrecen un apoyo suave pero efectivo para ayudarte a alcanzar tus objetivos de bienestar emocional y personal.
+                        </p>
+                    </div>
+                </div>
+                <button class="button-popups par"><a href="">Para mas información (whatsapp)</a></button>
+            </div>
+            <!-- <div class="servicios-popups"></div> -->
+            <!-- <div class="servicios-popups"></div> -->
     </main>
     
     <footer>
@@ -106,5 +146,6 @@
         </div>
     </footer>
     
+    <script src="Js/popups.js"></script>
 </body>
 </html>

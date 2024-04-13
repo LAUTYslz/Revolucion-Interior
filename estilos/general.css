@@ -69,6 +69,95 @@ nav{
     font-size: 2.5vh;
 }
 
+/* --------------------MAIN---------------------- */
+/** ----------------POPUPS */
+.servicios-popups{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80%;
+    border: black 3px solid;
+    border-radius: 20px;
+    background-image: url(/imagenes-titulo/imagenes-servicios/pop\ up\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+.servicios-popups.open{
+    display: flex;
+    opacity: 1;
+}
+.cerrar-popups{
+    width: 5vh;
+    /* position: absolute;
+    right: 3%;
+    top: 5%; */
+    cursor: pointer;
+    height: 5vh;
+}
+.encabezado-popups{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido-popups{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+.subtitulo-popups{
+    height: 15vh;
+    line-height: 15vh;
+}
+.contenido-popups p{
+    /* font-size: 2.5vh; */
+    /* height: 90%; */
+    line-height: 4vh;
+    font-weight: 400;
+}
+.contenido-popups p+p{
+    text-indent: 20px;
+    margin-top: .4vh;
+}
+.texto-popups{
+    max-height: 70%;
+    overflow-y: auto;
+}
+.button-popups{
+    width: 40%;
+    text-decoration: none;
+    height: 8%;
+    border: none;
+    border-radius: 20px;
+    margin: 2vh auto;
+    color: white;
+    transition: .3s all;
+    cursor: pointer;
+}
+@media screen and (min-width: 1024px){
+    .button-popups:hover{
+        scale: 1.1;
+
+    }
+}
+.button-popups a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.7vh;
+    font-weight: 300;
+}
+
 /* ------------------FOOTER-------------------- */
 footer{
     background-image: url(/imagenes-titulo/pc/footer.png);
