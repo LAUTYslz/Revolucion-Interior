@@ -40,8 +40,6 @@ main{
 }
 .servicios button:hover{
     cursor: pointer;
-    border:.5vh solid black;
-    color: black;
     scale: 1.1;
     /* border: 3px solid black ; */
 }
