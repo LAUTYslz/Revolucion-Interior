@@ -31,18 +31,25 @@ a{
 }
 /* ---------------HEADER------------------- */
 header{
-    width: 80%;
+    position: fixed;
+    /* position: relative; */
+    background-color: white;
+    width: 100%;
     margin: auto;
     height: 10vh;
-    position: relative;
+    transition: top 0.3s; /* Agrega una transición suave para el cambio de posición */
 }
+header.hidden {
+    top: -150px; /* o cualquier valor negativo que desees para ocultar el encabezado */
+  }
 nav{
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin: auto;
+    width: 80%;
 }
 #a-logo{
     height: 70%;
@@ -80,6 +87,9 @@ nav{
 }
 
 /* --------------------MAIN---------------------- */
+main{
+    margin-top: 10vh;
+}
 /** ----------------POPUPS */
 .servicios-popups{
     display: none;
@@ -238,8 +248,11 @@ footer{
 
     /* HEADER */
     header{
-        /* width: 90%; */
-        height: 9vh;
+        width: 100%;
+    }
+    nav{
+        width: 80%;
+        margin: auto;
     }
     #logo{
         height: 80%;
@@ -286,13 +299,13 @@ footer{
 /* !--------------RESPONSIVE CELULAR -----------*/
 @media only screen and (max-width: 768px) {
     
-    header{
+    /* header{
         width: 100%;
     }
     nav{
         width: 90%;
         margin: auto;
-    }
+    } */
     #nav-menu{
         /* Tiene flex */
         display: none;
@@ -315,7 +328,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: end;
-        top: 100%;
+        top: 99%;
         right: 0;
         background-color: #fff;
         width: 30%;
@@ -331,6 +344,7 @@ footer{
         font-size: 2vh;
         text-align: center;
         width: 100%;
+        font-weight: normal;
     }
     
 }
@@ -351,8 +365,11 @@ footer{
 
     /* HEADER */
     header{
-        /* width: 90%; */
-        height: 8vh;
+        width: 100%;
+    }
+    nav{
+        width: 90%;
+        margin: auto;
     }
     #logo{
         height: 70%;
