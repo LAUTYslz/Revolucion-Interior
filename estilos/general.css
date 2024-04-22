@@ -34,6 +34,7 @@ header{
     width: 80%;
     margin: auto;
     height: 10vh;
+    position: relative;
 }
 nav{
     height: 100%;
@@ -52,6 +53,12 @@ nav{
     scale: 1;
     height: 90%;
     margin: auto;
+}
+#mobile-menu-btn {
+    display: none; /* Ocultar el botón en pantallas normales */
+}
+#mobile-menu{
+    display: none;
 }
 #nav-menu{
     display: flex;
@@ -231,7 +238,7 @@ footer{
 
     /* HEADER */
     header{
-        width: 90%;
+        /* width: 90%; */
         height: 9vh;
     }
     #logo{
@@ -277,6 +284,56 @@ footer{
 }
 
 /* !--------------RESPONSIVE CELULAR -----------*/
+@media only screen and (max-width: 768px) {
+    
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 90%;
+        margin: auto;
+    }
+    #nav-menu{
+        /* Tiene flex */
+        display: none;
+        /* width: 50%; */
+    }
+    #mobile-menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+    #mobile-menu-btn div {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px;
+    }
+    #mobile-menu {
+        box-sizing: content-box;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        width: 30%;
+        padding: 10px;
+        border-radius: 0px 0px 20px 20px;
+    }
+    #mobile-menu.open {
+        display: flex;
+    }
+    #mobile-menu a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 2vh;
+        text-align: center;
+        width: 100%;
+    }
+    
+}
 
 @media screen and (max-width: 767px) {
 
@@ -294,16 +351,13 @@ footer{
 
     /* HEADER */
     header{
-        width: 90%;
+        /* width: 90%; */
         height: 8vh;
     }
     #logo{
         height: 70%;
     }
-    #nav-menu{
-        /* Tiene flex */
-        width: 50%;
-    }
+    
     #nav-menu a{
         transition: none;
     }
