@@ -155,7 +155,8 @@ main{
     }
 
     .servicios{
-        height: 27vh;
+        height: 32vh;
+        width: 100%;
     }
     .servicios button{
         width: 50%;
