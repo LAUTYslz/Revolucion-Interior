@@ -70,7 +70,9 @@ nav{
 #nav-menu{
     display: flex;
     justify-content: space-between;
+    /* Con 'nosotros'  */
     width: 30%;
+    /* width: 20%; */
 }
 #nav-menu a{
     text-decoration: none;
@@ -138,10 +140,7 @@ main{
     /* align-items: center; */
     /* justify-content: space-around; */
 }
-.subtitulo-popups{
-    /* height: 15vh; */
-    /* line-height: 15vh; */
-}
+
 .contenido-popups p{
     /* font-size: 2.5vh; */
     /* height: 90%; */
