@@ -1,0 +1,101 @@
+.float{
+	position:fixed;
+	width:7vh;
+	height:7vh;
+	bottom:40px;
+	left:40px;
+	/* background-color:#25d366; */
+
+    background-color: #A65891;
+	/* color:#FFF; */
+    color: white;
+
+	border-radius:50px;
+	text-align:center;
+    font-size:3.5vh;
+	box-shadow: 2px 2px 3px #0000007a;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #A65891;
+    background-color:white;
+    
+    animation: shake 1s;
+
+    animation-iteration-count: infinite;
+}
+
+.my-float{
+	margin-top:1.8vh;
+}
+/*! --------------RESPONSIVE TABLET ---------------  */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .float{
+        position:fixed;
+        width:7vh;
+        height:7vh;
+        bottom:30px;
+        left:30px;
+        /* background-color:#25d366; */
+
+        background-color: #A65891;
+        /* color:#FFF; */
+        color: white;
+
+        border-radius:50px;
+        text-align:center;
+        font-size:3.5vh;
+        box-shadow: 2px 2px 3px #000000b6;
+        z-index:100;
+    }
+    .float:hover {
+        text-decoration: none;
+        color: #A65891;
+        background-color:white;
+        
+        animation: shake 1s;
+
+        animation-iteration-count: infinite;
+    }
+
+    .my-float{
+        margin-top:1.8vh;
+    }
+}
+/*! --------------RESPONSIVE CELULAR ---------------  */
+@media only screen and (max-width: 768px) {
+
+    .float{
+        position:fixed;
+        width:7vh;
+        height:7vh;
+        bottom:15px;
+        left:15px;
+        /* background-color:#25d366; */
+
+        background-color: #A65891;
+        /* color:#FFF; */
+        color: white;
+
+        border-radius:50px;
+        text-align:center;
+        font-size:3.5vh;
+        box-shadow: 2px 2px 3px #000000b6;
+        z-index:100;
+    }
+    .float:hover {
+        text-decoration: none;
+        color: #A65891;
+        background-color:white;
+        
+        animation: shake 1s;
+
+        animation-iteration-count: infinite;
+    }
+
+    .my-float{
+        margin-top:1.8vh;
+    }
+}

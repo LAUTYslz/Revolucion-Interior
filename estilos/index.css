@@ -442,7 +442,7 @@
     grid-gap: 3vh 5%;
 }
 .algunos-servicios{
-    height: 23vh;
+    height: 25vh;
 }
 .algunos-servicios button{
     width: 80%;
@@ -462,6 +462,10 @@
 }
 .texto-alg-servicios{
     height: 78%;
+    border-radius: 15px;
+}
+.ver-mas{
+    border-radius: 15px;
 }
 .algunos-servicios button:hover{
     cursor: pointer;
@@ -474,6 +478,7 @@
     height: 5vh;
     width: 40%;
     transition: none;
+    border-radius: 15px;
 }
 .ver-todo button:hover{
     background-color: white;

@@ -169,7 +169,12 @@ main{
     }
     .texto-servicios h3{
         font-size: 2.5vh;
+        border-radius: 15px;
     }
+    .ver-mas{
+        border-radius: 15px;
+    }
+   
     .texto-servicios img{
         width: 70%;
     }

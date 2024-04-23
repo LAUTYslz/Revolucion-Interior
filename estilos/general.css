@@ -262,6 +262,46 @@ footer{
         font-size: 2vh;
         font-weight: 300;
     }
+    #nav-menu{
+        /* Tiene flex */
+        display: none;
+        /* width: 50%; */
+    }
+    #mobile-menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+    #mobile-menu-btn div {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px;
+    }
+    #mobile-menu {
+        box-sizing: content-box;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        top: 99%;
+        right: 0;
+        background-color: #fff;
+        width: 30%;
+        padding: 10px;
+        border-radius: 0px 0px 20px 20px;
+    }
+    #mobile-menu.open {
+        display: flex;
+    }
+    #mobile-menu a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 2vh;
+        text-align: center;
+        width: 100%;
+        font-weight: normal;
+    }
 
     /* HEADER */
     header{
