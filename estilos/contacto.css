@@ -57,7 +57,7 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50%;
+    height: 55%;
 }
 
 #contenedor-contacto-form{
@@ -113,6 +113,36 @@ label{
     /* border: #BF5B04; */
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+#popup-message {
+    font-size: 18px;
+}
+
+
 
 /* !--------------- RESPONSIVE: TABLET ------------*/
 
@@ -148,7 +178,7 @@ label{
     
     #texto-contacto{
         width: 50%;
-        height: 50%;
+        height: 60%;
     }
 
     #contenedor-contacto-form{
